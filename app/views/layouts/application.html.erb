@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails5Blog</title>
+    <title>Mani Personal Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +11,14 @@
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+      <a href="#" class="name">Mani</a>
+      <nav>
+        <%= link_to "Articles", posts_path %>
+          <a href="#">Projects</a>
+          <a href="#">ContactUS</a>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
