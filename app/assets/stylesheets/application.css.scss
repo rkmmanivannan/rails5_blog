@@ -216,7 +216,16 @@ input[type="submit"]:hover{
   border: 2px solid #5F4978;
   color: #5F4978;
 }
-
+.project_button{
+  background: #5F4978;
+  color: #fff;
+  text-decoration: none;
+  padding: .4em 1em;
+}
+.button_wrapper{
+  margin: 4em 0 0 0;
+  text-align: center;
+}
 /* post show content */
 #post_show_content > header{
   text-align: center;
