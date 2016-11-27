@@ -12,7 +12,7 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Mani</a>
+      <%= link_to "Mani", root_path, class: "name" %>
       <nav>
         <%= link_to "Articles", posts_path %>
           <a href="#">Projects</a>
@@ -20,5 +20,13 @@
       </nav>
     </header>
     <%= yield %>
+    <footer id="main_footer">
+      <p class="copyright">&copy; 2016 Manivannan </p>
+      <nav>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-github"></a>
+      </nav>
+    </footer>
   </body>
 </html>
