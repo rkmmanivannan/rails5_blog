@@ -19,6 +19,11 @@
           <a href="#">ContactUS</a>
       </nav>
     </header>
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
     <%= yield %>
     <footer id="main_footer">
       <p class="copyright">&copy; 2016 Manivannan </p>
